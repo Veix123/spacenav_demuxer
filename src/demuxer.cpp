@@ -93,12 +93,12 @@ void Demuxer::changeMode()
   {
     case OutputMode::VR_CAM:
       output_mode_ = OutputMode::TEMOTO;
-      ROS_INFO("[Demuxer] Switched to camera control mode.");
+      ROS_INFO("[Demuxer] Switched to temoto control mode.");
       break;
 
     case OutputMode::TEMOTO:
       output_mode_ = OutputMode::VR_CAM;
-      ROS_INFO("[Demuxer] Switched to temoto control mode.");
+      ROS_INFO("[Demuxer] Switched to camera control mode.");
       break;
 
     default:
